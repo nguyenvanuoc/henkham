@@ -1,0 +1,123 @@
+.header-top{
+	background: #005ca1;
+	.contact{
+		padding:7px 0px;
+		color: #fff;
+		.icon{
+			margin-right: 5px;
+		}
+
+	}
+	.login{
+		color: #fff;
+		.icon{
+			.inline;
+
+		}
+		.link{
+			.inline;
+			.relative;
+			padding:7px  10px;
+			color: #fff;
+			&:hover{
+				.underline;
+			}
+
+			&:after{
+				content: "";
+				.absolute;
+				top: 0px;
+				bottom: 0px;
+				margin: auto;
+				right: 0px;
+				width: 1px;
+				border-left: 1px dotted #fff;
+				height: 15px;
+
+			}
+			&:last-child{
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+
+}
+
+.header{
+	background: @main;
+	border: 0px;
+	.corner(0px);
+	padding: 0px;
+	margin: 0px;
+	.navbar-collapse{
+		padding: 0px;
+	}
+	.navbar-nav{
+		>li{
+			>a{
+				color: #fff;
+				font-family: "Roboto Condensed";
+				font-size: 16px;
+				.upper;
+				.bold;
+				padding: 20px 20px;
+				&:hover,&:focus{
+					color: #fff;
+
+				}
+
+
+			}
+			&.active,&:hover,&.open{
+				>a{
+					&:hover,&:focus{
+						.rgba(#000,0.1);
+						color: #fff;
+					}
+					.rgba(#000,0.1);
+					color: #fff;
+
+				}
+
+			}
+			&:hover{
+				.dropdown-memu{
+					display: block;
+				}
+			}
+			&.default{
+				>a{
+					background: @second;
+				}
+			}
+		}
+	}
+	.navbar-brand{
+		height: auto;
+		padding: 2px 0px;
+		margin-left: 0px;
+	}
+	.navbar-brand>img{
+		height: 55px;
+	}
+	.dropdown-menu{
+		background: #005ca1;
+		border: none;
+		>li>a{
+			padding: 7px 10px;
+			color: #fff;
+		}
+		>li{
+			&.active,&:hover{
+				a,a:hover,a:focus{
+					.rgba(#000,0.1);	
+				}
+				
+
+			}
+
+		}
+	}
+}

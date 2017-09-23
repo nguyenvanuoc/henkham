@@ -15,79 +15,117 @@
     <meta content="index, follow" name="ROBOTS">
     <!-- General style -->
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800&subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/ap8/css/ap8.css">
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 
 <body>
     <div class="common-overlay" onclick="LP.expandMenu('close',this);"></div>
 
     <!-- Begin .header-->
-    <header class="header">
+    <div class="header-top">
         <div class="container">
-            <div class="logo">
-                <img src="img/logo.svg" alt="">
+            <div class="contact pull-left"><span class="icon -ap icon-phone-handset"></span> Contact Us: info@yoursite.com   |    Call Us +1 800 245 39 25</div>
+            <div class="login pull-right">
+                <span class="icon -ap icon-user6"></span>
+                <a href="#" class="link">Đăng nhập</a>
+                <a href="#" class="link"> Đăng ký</a>
             </div>
-            <div class="box-menus">
-                <nav class="navbar">
-                    <ul class="nav">
-                        <li class="menu-item active">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="menu-item"><a href="#">Pricing</a></li>
-
-                        <li class="menu-item sub">
-                            <a href="#"  type="button" data-toggle="dropdown">Product <span class="caret"></span></button></a>
-
-                            <ul class="dropdown-menu animated bounceIn">
-                                <li><a href="#">My Album</a></li>
-                                <li><a href="#">My Collection</a></li>
-                                <li><a href="#">Product list</a></li>
-                                <li><a href="#">Product Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item"><a href="#">Blog</a></li>
-                        <li class="menu-item"><a href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
-
-                <div class="actions">
-                    <a href="#" class="btn btn-login">Login</a>
-                    <a href="#" class="btn btn-login">Sign Up</a>
+        </div>
+    </div>
+    <header class="header navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand"><img src="img/logo.svg" alt=""></a>
+                <div class="nav-toggle" onclick="LP.expandMenu('open',this);" >
+                    <span class="bar first"></span>
+                    <span class="bar mid"></span>
+                    <span class="bar last"></span>
                 </div>
             </div>
-            <div class="nav-toggle" onclick="LP.expandMenu('open',this);" >
-                <span class="bar first"></span>
-                <span class="bar mid"></span>
-                <span class="bar last"></span>
-            </div>
+            <nav class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="menu-item active">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Chuyên gia</a></li>
+
+                    <li class="menu-item sub">
+                        <a href="#"  type="button" data-toggle="dropdown">       Phòng khám       <span class="caret"></span></button></a>
+
+                        <ul class="dropdown-menu animated bounceIn">
+                            <li><a href="#">My Album</a></li>
+                            <li><a href="#">My Collection</a></li>
+                            <li><a href="#">Product list</a></li>
+                            <li><a href="#">Product Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Chuyên khoa    </a></li>
+                    <li class="menu-item"><a href="#">Tin tức </a></li>
+                    <li class="menu-item default"><a href="#">Đặt lịch </a></li>
+                </ul>
+            </nav>
         </div>
     </header> 
     <div class="hero-banner" id="banner">
-        <div class="hero-cover"></div>
+        <div class="hero-cover">
+            <img src="img/banner.jpg">
+        </div>
         <div class="hero-bg">
-            <div class="wave"></div>
-            <div class="wave"></div>
         </div>
         <div class="hero-content">
             <div class="container">
-                <h1 class="title">Easy business banking</h1>
-                <p class="description">The banking alternative for entrepreneursfreelancersagile teamsSMEs</p>
+                <h1 class="title">Hẹn Khám Nhanh</h1>
+                <p class="description">CHỌN ĐÚNG THẦY - TÌM ĐÚNG THUỐC</p>
                 <div class="actions">
-                    <a href="#" class="btn btn-signup">Sign Up</a>
+                    <a href="#" class="btn btn-signup"><span class="icon -ap icon-calendar22"></span> Đặt lịch khám</a>
+                    <a href="#" class="btn btn-signup"><span class="icon -ap icon-play_arrow"></span>Hướng dẫn</a>
+                </div>
+                <div class="arrow-down">
+                    <span class="-ap icon icon-chevron-down3"></span>
                 </div>
             </div>
         </div>
-        <div class="hero-img">
-            <div class="device-laptop">
-                <img src="img/device-laptop.png" alt="">
-            </div>
-            <div class="device-phone">
-                <img src="img/device-phone.png" alt="">
+    </div>
+    <div class="box-search">
+        <div class="head">
+            <h1 class="title">Tìm kiếm</h1>
+            <p class="desc">Tìm kiếm tất cả thông tin bạn cần</p>
+        </div>
+        <div class="form-search">
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="form-group">
+                        <select name="" id="" class="form-control">
+                            <option value="">Thành phố</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Hà Nam</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="form-group">
+                        <select name="" id="" class="form-control">
+                            <option value="">Chuyên khoa</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Hà Nam</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm chuyên gia hàng đầu các chuyên khoa.">
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-12">
+                    <button class="btn btn-search">
+                        Tìm kiếm
+                    </button>
+                </div>
             </div>
         </div>
     </div>
