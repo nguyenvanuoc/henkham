@@ -19,8 +19,11 @@
     <link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/ap8/css/ap8.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-select/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+
 </head>
 
 <body>
@@ -41,13 +44,13 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand"><img src="img/logo.svg" alt=""></a>
-                <div class="nav-toggle" onclick="LP.expandMenu('open',this);" >
+                <div class="nav-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" >
                     <span class="bar first"></span>
                     <span class="bar mid"></span>
                     <span class="bar last"></span>
                 </div>
             </div>
-            <nav class="collapse navbar-collapse navbar-right">
+            <nav class="collapse navbar-collapse navbar-right" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="menu-item active">
                         <a href="#">Trang chủ</a>
@@ -72,8 +75,7 @@
         </div>
     </header> 
     <div class="hero-banner" id="banner">
-        <div class="hero-cover">
-            <img src="img/banner.jpg">
+        <div class="hero-cover" style="background-image: url(img/banner.jpg);">
         </div>
         <div class="hero-bg">
         </div>
@@ -82,12 +84,13 @@
                 <h1 class="title">Hẹn Khám Nhanh</h1>
                 <p class="description">CHỌN ĐÚNG THẦY - TÌM ĐÚNG THUỐC</p>
                 <div class="actions">
-                    <a href="#" class="btn btn-signup"><span class="icon -ap icon-calendar22"></span> Đặt lịch khám</a>
+                    <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span> Đặt lịch khám</a>
                     <a href="#" class="btn btn-signup"><span class="icon -ap icon-play_arrow"></span>Hướng dẫn</a>
                 </div>
-                <div class="arrow-down">
-                    <span class="-ap icon icon-chevron-down3"></span>
-                </div>
+                
+            </div>
+            <div class="arrow-down">
+                <span class="-ap icon icon-chevron-down3"></span>
             </div>
         </div>
     </div>
@@ -100,7 +103,7 @@
             <div class="row">
                 <div class="col-sm-3 col-xs-12">
                     <div class="form-group">
-                        <select name="" id="" class="form-control">
+                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
                             <option value="">Thành phố</option>
                             <option value="">Hà Nội</option>
                             <option value="">Hà Nam</option>
@@ -109,7 +112,7 @@
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <div class="form-group">
-                        <select name="" id="" class="form-control">
+                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
                             <option value="">Chuyên khoa</option>
                             <option value="">Hà Nội</option>
                             <option value="">Hà Nam</option>
@@ -123,7 +126,7 @@
                 </div>
                 <div class="col-sm-2 col-xs-12">
                     <button class="btn btn-search">
-                        Tìm kiếm
+                        <span class="icon -ap icon-search2"></span>Tìm kiếm 
                     </button>
                 </div>
             </div>
@@ -131,262 +134,534 @@
     </div>
     <!-- End .header-->
     <!-- Begin .section-->
-    <section class="section -feature">
-        <div class="container">
-            <div class="section-head">
-                <h1 class="title">A better way to work together</h1>
-                <p class="desc">Azuda brings teams together to work through problems, move ideas forward, and learn from each other along the way.</p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="item col-sm-4 col-xs-12">
-                        <div class="w">
-                            <div class="icon blue">
-                                <span class="-ap icon-uniF193"></span>
-                            </div>
-                            <div class="description">
-                                <h3 class="title">Call and Chat free</h3>
-                                <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="item col-sm-4 col-xs-12">
-                        <div class="w">
-                            <div class="icon green">
-                                <span class="-ap icon-uniF1072"></span>
-                            </div>
-                            <div class="description">
-                                <h3 class="title">Set Calendar</h3>
-                                <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="item col-sm-4 col-xs-12">
-                        <div class="w">
-                            <div class="icon red">
-                                <span class="-ap icon-uniF116"></span>
-                            </div>
-                            <div class="description">
-                                <h3 class="title">Create Blog</h3>
-                                <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="register-box">
-                    <a href="#" class="btn btn-register">Learn more about cross  <b class="main">promotion azuda</b> <span class="-ap icon-arrow-right3"></span></a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="section -keymess">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="section-desc">
-                        <div class="head">
-                            <span class="icon -ap icon-laptop-phone">
-                            </span>
-                            <h3 class="title">Mobile Friendly</h3>
-                        </div>
-                        
-                        <div class="desc">
-                            <div class="block">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            </div>
-                            <div class="block">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            </div>
-                            <div class="block">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <div class="section-image">
-                        <img src="uploads/Perspective-glass-levels-mockup.png" class="img-responsive">    
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section -keymess">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <div class="section-image pull-right">
-                        <img src="uploads/screen-shot.png" class="img-responsive">    
-                    </div>
-                    
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="section-desc">
-                        <div class="head">
-                            <span class="icon -ap icon-chart-bars">
-                            </span>
-                            <h3 class="title">Drive Sales Actions with Data</h3>
-                        </div>
-                        
-                        <div class="desc">
-                            <div class="block">
-                                Improve your sales process with Base insights that are easily accessible to all levels of the organization. Answers to questions like, "Which deals will close this month?” and, "What deals am I about to lose?” are now at your fingertips.
-                            </div>
-                            <div class="register-box">
-                                <a href="#" class="btn btn-register">Learn more <span class="-ap icon-arrow-right3"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <section class="-customers section">
-        <div class="container">
-            <div class="section-head">
-                <h1 class="title">Access the highest paying ad networks</h1>
-                <p class="desc">Tapdaq mediates many of the world’s leading demand sources.</p>
-            </div>
-            <div class="list-logo">
-                <div class="item">
-                    <img src="uploads/customers/band2.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/band3.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/band4.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/band5.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/band6.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/band7.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/customer-5.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/customer-2.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/customer-3.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/customer-5.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/customer-7.png">    
-
-                </div>
-                <div class="item">
-                    <img src="uploads/customers/band2.png">    
-
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- End .section-->
     <!-- Begin .footer-->
-    <footer class="footer">
-        <div class="box -register">
-            <div class="container">
-                 <div class="section-head">
-                    <h1 class="title">Ready to get started?</h1>
-                    <p class="desc">Create your account in seconds and start earning more revenue.</p>
+    <section class="section -whychoose">
+        <div class="bg" style="background-image: url(img/bg-section-1.jpg);">
+            <img src="" alt="">
+        </div>
+        <div class="box-whychoose">
+            <h2 class="title-main">TẠI SAO BẠN NÊN CHỌN HẸN KHÁM CHUYÊN GIA <span>HỒNG PHÚC?</span></h2>
+            <div class="list">
+                <div class="item">
+                    <div class="wrap">
+                        <div class="icon">
+                            <img src="img/icons/surgeon.svg">
+                        </div>
+                        <div class="text"><span>Chuyên gia hàng đầu</span></div>
+                    </div>
                 </div>
-                <div class="actions">
-                    <a href="#" class="btn btn-register">Sign Up</a>
-                    <a href="#" class="btn btn-contact">Contact Us</a>
+                <div class="item">
+                    <div class="wrap">
+                        <div class="icon">
+                            <img src="img/icons/first-aid-kit.svg">
+                        </div>
+                        <div class="text"><span>Đúng chuyên khoa, chuyên gia</span></div>
+                    </div>
                 </div>
-                
+                <div class="item">
+                    <div class="wrap">
+                        <div class="icon">
+                            <img src="img/icons/blood-donation.svg">
+                        </div>
+                        <div class="text"><span>Lợi ích của người bệnh</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="img/icons/operator-avatar.svg">
+                    </div>
+                    <div class="text"><span>Hỗ trợ tận tình</span></div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="img/icons/customer-service.svg">
+                    </div>
+                    <div class="text"><span>Chuyên gia hàng đầu</span></div>
+                </div>
             </div>
         </div>
-        
+    </section>
+    <section class="box-faculty">
         <div class="container">
-            <div class="footer-block-link">
+            <div class="faculty-canvas">
+                <div class="faculty-sidebar">
+                    <h2 class="title-main">
+                        DANH MỤC CHUYÊN KHOA
+                    </h2>
+                    <div class="description">Để đáp ứng nhu cầu chăm sóc sức khỏe chuyên sâu toàn diện của nhân dân chúng tôi không ngừng phục vụ quý khách một cách tốt nhất</div>
+                    <div class="actions">
+                        <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span>Đặt lịch khám</a>
+                    </div>
+
+
+                </div>
+                <div class="faculty-list">
+                    <div class="row-list">
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/tim-mach.png">
+                                </span>
+                                <span class="text">Tim mạch</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/gan-mat.png">
+                                </span>
+                                <span class="text">Gan mật</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/noi-tiet.png">
+                                </span>
+                                <span class="text">Nội tiết - Rối loạn chuyển hóa</span>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row-list">
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/co-xuong-khop.png">
+                                </span>
+                                <span class="text">Cơ xương khớp</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/than-kinh.png">
+                                </span>
+                                <span class="text">Thần kinh</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/san-phu-khoa.png">
+                                </span>
+                                <span class="text">Sản phụ khoa</span>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row-list">
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/mat.png">
+                                </span>
+                                <span class="text">Mắt</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/nhi-khoa.png">
+                                </span>
+                                <span class="text">Nhi khoa</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/ung-thu.png">
+                                </span>
+                                <span class="text">Ung thư</span>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row-list">
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/ho-hap.png">
+                                </span>
+                                <span class="text">Hô hấp</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/rang-ham-mat.png">
+                                </span>
+                                <span class="text">Răng-Hàm-Mặt</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/trung-tam-set-nghiem.png">
+                                </span>
+                                <span class="text">Trung tâm xét nghiệm</span>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row-list">
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/tieu-hoa.png">
+                                </span>
+                                <span class="text">Tiêu hóa</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/tai-mui-hong.png">
+                                </span>
+                                <span class="text">Tai-Mũi-Họng</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/tham-do-chuc-nang.png">
+                                </span>
+                                <span class="text">Trung tâm Thăm dò chức năng</span>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row-list">
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/than-tiet-nieu.png">
+                                </span>
+                                <span class="text">Thận tiết niệu</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/da-lieu.png">
+                                </span>
+                                <span class="text">Da liễu</span>
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="w">
+                                <span class="icon">
+                                    <img src="img/icons/san-phu-khoa.png">
+                                </span>
+                                <span class="text">Sản phụ khoa</span>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section -expert">
+        <div class="container">
+            <div class="head-main">
+                <h2 class="title-main">Đội ngũ chuyên gia</h2>
+                <div class="description">Ở đây chúng tôi luôn có những chuyên gia tốt nhất</div>
+            </div>
+            <div class="slider-expert">
+                <div class="item">
+                    <div class="panel">
+                        <div class="panel-header">
+                            Giải phẫu bệnh
+                        </div>
+                        <div class="panel-body">
+                            <div class="avatar">
+
+                                <div class="img" style="background-image: url(http://henkhamchuyengia.net.vn/Portals/0/Thumbnails/CG__pgs-ts-nguyen-tho-lo.jpg);"></div>
+                            </div>
+                            <div class="name">THS. BS Nguyễn Thị Ngọc</div>
+                            <div class="detail">
+                                <div class="pos">Chuyên khoa: Da liễu - Thẩm mỹ</div>
+                                <div class="exp">Kinh nghiệm: 18 năm</div>
+                            </div>
+                            <div class="actions">
+                                <a href="" class="btn">Hẹn khám</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="panel">
+                        <div class="panel-header">
+                            Giải phẫu bệnh
+                        </div>
+                        <div class="panel-body">
+                            <div class="avatar">
+                                 <div class="img" style="background-image: url(http://henkhamchuyengia.net.vn/Portals/0/Thumbnails/CG__pgs-ts-nguyen-tho-lo.jpg);"></div>
+                                
+                            </div>
+                            <div class="name">THS. BS Nguyễn Thị Ngọc</div>
+                            <div class="detail">
+                                <div class="pos">Chuyên khoa: Da liễu - Thẩm mỹ</div>
+                                <div class="exp">Kinh nghiệm: 18 năm</div>
+                            </div>
+                            <div class="actions">
+                                <a href="" class="btn">Hẹn khám</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="panel">
+                        <div class="panel-header">
+                            Giải phẫu bệnh
+                        </div>
+                        <div class="panel-body">
+                            <div class="avatar" >
+                                <div class="img" style="background-image: url(http://henkhamchuyengia.net.vn/Portals/0/Thumbnails/CG__pgs-ts-nguyen-tho-lo.jpg);"></div>
+                                
+                            </div>
+                            <div class="name">THS. BS Nguyễn Thị Ngọc</div>
+                            <div class="detail">
+                                <div class="pos">Chuyên khoa: Da liễu - Thẩm mỹ</div>
+                                <div class="exp">Kinh nghiệm: 18 năm</div>
+                            </div>
+                            <div class="actions">
+                                <a href="" class="btn">Hẹn khám</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="panel">
+                        <div class="panel-header">
+                            Giải phẫu bệnh
+                        </div>
+                        <div class="panel-body">
+                            <div class="avatar" >
+                                <div class="img" style="background-image: url(http://henkhamchuyengia.net.vn/Portals/0/Thumbnails/CG__pgs-ts-nguyen-tho-lo.jpg);"></div>
+                                
+                            </div>
+                            <div class="name">THS. BS Nguyễn Thị Ngọc</div>
+                            <div class="detail">
+                                <div class="pos">Chuyên khoa: Da liễu - Thẩm mỹ</div>
+                                <div class="exp">Kinh nghiệm: 18 năm</div>
+                            </div>
+                            <div class="actions">
+                                <a href="" class="btn">Hẹn khám</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-slider">
+                <div class="slider-nav nav-prev"></div>
+                <div class="slider-nav nav-next"></div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section -news">
+        <div class="container">
+            <div class="head-main">
+                <h2 class="title-main">Tin tức</h2>
+                <p class="description">Cập nhật tin tức mới nhất</p>
+            </div>
+            <div class="box-news">
                 <div class="row">
-                    <div class="col-sm-3 col-xs-12">
-                        <h3 class="title">Home</h3>
-                        <div class="links">
-                            <a href="#" class="link">Features</a>
-                            <a href="#" class="link">Products</a>
-                            <a href="#" class="link">About</a>
-                            <a href="#" class="link">Blog</a>
+                    <div class="col-sm-7 col-xs-12 col-md-7">
+                        <div class="post-main">
+                            <div class="post-image">
+                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/tin-tuc-moi.jpg);"></a>
+                            </div>
+                            <div class="post-detail">
+                                <div class="post-cat">
+                                    <a href="#">Sức khoẻ & cuộc sống</a>
+                                </div>
+                                <h3 class="post-title"><a href="#">Gia tăng đột biến bệnh nhân sơ sinh mắc viêm phổi do nhiễm virus</a></h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <h3 class="title">Product</h3>
-                        <div class="links">
-                            <a href="#" class="link">Features</a>
-                            <a href="#" class="link">How it works</a>
-                            <a href="#" class="link">Pricing</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <h3 class="title">About</h3>
-                        <div class="links">
-                            <a href="#" class="link">Team</a>
-                            <a href="#" class="link">Blog</a>
-                            <a href="#" class="link">Jobs <span class="hr">Hiring</span></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <h3 class="title">Support</h3>
-                        <div class="links">
-                            <a href="#" class="link">Contact us</a>
-                            <a href="#" class="link">FAQ</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <h3 class="title">Legal</h3>
-                        <div class="links">
-                            <a href="#" class="link">Terms</a>
-                            <a href="#" class="link">Privacy</a>
-                            <a href="#" class="link">Cookies</a>
+                    <div class="col-sm-5 col-xs-12 col-md-5">
+                        <div class="posts">
+                            <div class="item">
+                                <div class="post-image">
+                                    <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/tin-tuc-moi.jpg);"></a>
+                                </div>
+                                <h4 class="post-title">
+                                    <a href="#">Căn dặn bệnh nhân trước khi đi khám</a>
+                                </h4>
+                                <div class="post-info">
+                                    <span class="post-date">
+                                        <span class="icon -ap icon-calendar22"></span>
+                                        08.09.2017
+                                    </span>
+                                    <span class="post-cat">Sức khoẻ & Cuộc sống</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="post-image">
+                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/kien-thuc-y-hoc.jpg);"></a>
+                                </div>
+                                <h4 class="post-title">
+                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                </h4>
+                                <div class="post-info">
+                                    <span class="post-date">
+                                        <span class="icon -ap icon-calendar22"></span>
+                                        08.09.2017
+                                    </span>
+                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="post-image">
+                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/kien-thuc-y-hoc.jpg);"></a>
+                                </div>
+                                <h4 class="post-title">
+                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                </h4>
+                                <div class="post-info">
+                                    <span class="post-date">
+                                        <span class="icon -ap icon-calendar22"></span>
+                                        08.09.2017
+                                    </span>
+                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="post-image">
+                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/tin-tuc-moi.jpg);"></a>
+                                </div>
+                                <h4 class="post-title">
+                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                </h4>
+                                <div class="post-info">
+                                    <span class="post-date">
+                                        <span class="icon -ap icon-calendar22"></span>
+                                        08.09.2017
+                                    </span>
+                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="post-image">
+                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/kien-thuc-y-hoc.jpg);"></a>
+                                </div>
+                                <h4 class="post-title">
+                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                </h4>
+                                <div class="post-info">
+                                    <span class="post-date">
+                                        <span class="icon -ap icon-calendar22"></span>
+                                        08.09.2017
+                                    </span>
+                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="bottom">
-                    <div class="pull-left">
-                        <div class="social">
-                            <span class="name">Connect: </span>
-                            <a href="#" class="btn -fb"><span class="-ap icon-facebook"></span></a>
-                            <a href="#" class="btn -fb"><span class="-ap icon-youtube"></span></a>
-                            <a href="#" class="btn -fb"><span class="-ap icon-google"></span></a>
-                            <a href="#" class="btn -fb"><span class="-ap icon-twitter"></span></a>
+            </div>
+        </div>
+    </section>
+    <section class="section -customers">
+        <div class="container">
+            <div class="head-main">
+                <h2 class="title-main">Danh sách phòng khám </h2>
+                <p class="description">Hơn 10+ Phòng khám trong hệ thống của chúng tôi</p>
+            </div>
+            <div class="list-customers">
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/4f6258e0-1e1d-4b89-85ff-9295bb1fccb6.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/9ff8f006-9eb8-43f9-872c-ca9d070be139.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/ded876c7-7b1f-43a2-9569-2c875cb7174d.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/2c78d424-9189-48c0-9759-1a96c37c820f.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/df3c508f-71af-4cf0-94ad-3203a9947e07.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/e158d901-29bb-4684-b505-92599ec025b1.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/0f4c11da-c8b7-406b-a601-8a2fdd22fca4.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="link">
+                        <img src="http://henkhamchuyengia.net.vn/Portals/0/ListPhongKham/73465d29-bf6a-4a2b-b74f-2541dad1a598.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span>Đặt lịch khám</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 box-info">
+                    <div class="info">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
                         </div>
-                    </div>
-                    <div class="pull-right">
-                        <div class="copyright">
-                            Copyright &copy; <b>Azuda</b>
+                        <div class="desc">
+                            <p>CÔNG TY CỔ PHẨN THƯƠNG MẠI VÀ PHÁT TRIỂN DU LỊCH XANH</p>
+                            <p>Địa chỉ: Số 12, ngõ C khu TT công an Tỉnh, tổ 7, Mộ Lao, Hà Đông, Hà Nội.</p>
+                            <p>Hotline: 046.687.1279 | henkhamchuyengia.net@gmail.com.</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 box-links">
+                    <h4 class="title">Liên kết</h4>
+                    <div class="links">
+                        <a class="url">Trang chủ        </a>
+                        <a class="url">Giới thiệu      </a>
+                        <a class="url">Tính năng        </a>
+                        <a class="url">Bảng giá        </a>
+                        <a class="url">Blog          </a>
+                        <a class="url">Trợ giúp</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 box-links">
+                    <h4 class="title">Chính sách</h4>
+                    <div class="links">
+                        <a class="url">Chính sách       </a>
+                        <a class="url">Bảo mật     </a>
+                        <a class="url">Câu hỏi thường gặp  </a>
+                        <a class="url">Hợp tác</a>
+                        <a class="url">Hỗ trợ</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 box-links">
+                    <h4 class="title">Liên kết</h4>
+                    <div class="social">
+                        <a href="#" class="btn"><span class="fa fa-facebook"></span></a>
+                        <a href="#" class="btn"><span class="fa fa-google"></span></a>
+                        <a href="#" class="btn"><span class="fa fa-youtube"></span></a>
+                        <a href="#" class="btn"><span class="fa fa-twitter"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright &copy; 2017. By <b>Uoc Nguyen</b>
             </div>
         </div>
         
@@ -394,6 +669,9 @@
     <!-- End .footer-->
     <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
     <script type="text/javascript" src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    
+    <script type="text/javascript" src="vendor/slick/js/slick.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
