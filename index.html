@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed:300,400,400i,700|Roboto:300,400,400i,500,700&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/ap8/css/ap8.css">
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap-select/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
@@ -32,7 +32,7 @@
     <!-- Begin .header-->
     <div class="header-top">
         <div class="container">
-            <div class="contact pull-left"><span class="icon -ap icon-phone-handset"></span> Contact Us: info@yoursite.com   |    Call Us +1 800 245 39 25</div>
+            <div class="contact pull-left"><span class="icon -ap icon-phone-handset"></span> Liên hệ: info@yoursite.com   |    +1 800 245 39 25</div>
             <div class="login pull-right">
                 <span class="icon -ap icon-user6"></span>
                 <a href="#" class="link">Đăng nhập</a>
@@ -55,10 +55,10 @@
                     <li class="menu-item active">
                         <a href="#">Trang chủ</a>
                     </li>
-                    <li class="menu-item"><a href="#">Chuyên gia</a></li>
+                    <li class="menu-item"><a href="#">Thành phố</a></li>
 
                     <li class="menu-item sub">
-                        <a href="#"  type="button" data-toggle="dropdown">       Phòng khám       <span class="caret"></span></button></a>
+                        <a href="#"  type="button" data-toggle="dropdown">       chuyên khoa      <span class="caret"></span></button></a>
 
                         <ul class="dropdown-menu animated bounceIn">
                             <li><a href="#">My Album</a></li>
@@ -67,24 +67,31 @@
                             <li><a href="#">Product Sidebar</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item"><a href="#">Chuyên khoa    </a></li>
+                    <li class="menu-item"><a href="#">chuyên gia    </a></li>
+                    <li class="menu-item"><a href="#">Hẹn khám    </a></li>
                     <li class="menu-item"><a href="#">Tin tức </a></li>
-                    <li class="menu-item default"><a href="#">Đặt lịch </a></li>
+                    <li class="menu-item"><a href="#">về chúng tôi </a></li>
                 </ul>
             </nav>
         </div>
     </header> 
     <div class="hero-banner" id="banner">
-        <div class="hero-cover" style="background-image: url(img/banner.jpg);">
+        <div class="hero-cover">
+            <div class="item " style="background-image: url(img/banner.jpg);">
+                
+            </div>
+            <div class="item " style="background-image: url(img/banner.jpg);">
+                
+            </div>
         </div>
         <div class="hero-bg">
         </div>
         <div class="hero-content">
             <div class="container">
-                <h1 class="title">Hẹn Khám Nhanh</h1>
+                <h1 class="title">Hẹn Khám Chuyên Gia Hồng Phúc</h1>
                 <p class="description">CHỌN ĐÚNG THẦY - TÌM ĐÚNG THUỐC</p>
                 <div class="actions">
-                    <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span> Đặt lịch khám</a>
+                    <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span> Hẹn Khám</a>
                     <a href="#" class="btn btn-signup"><span class="icon -ap icon-play_arrow"></span>Hướng dẫn</a>
                 </div>
                 
@@ -138,7 +145,7 @@
     <!-- End .section-->
     <!-- Begin .footer-->
     <section class="section -whychoose">
-        <div class="bg" style="background-image: url(img/bg-section-1.jpg);">
+        <div class="bg" style="background-image: url(img/bg-section-1.png);">
             <img src="" alt="">
         </div>
         <div class="box-whychoose">
@@ -149,15 +156,22 @@
                         <div class="icon">
                             <img src="img/icons/surgeon.svg">
                         </div>
-                        <div class="text"><span>Chuyên gia hàng đầu</span></div>
+                        <div class="text"><span>Chuyên gia hàng đầu</span></div>
                     </div>
+                    <div class="popup-desc">
+                        Hẹn khám chuyên gia Hồng Phúc lựa chọn và kết nối với các chuyên gia đã, và đang công tác tại các bệnh viện lớn uy tín hàng đầu Việt Nam, có trình độ chuyên môn cao và tâm huyết với nghề.
+                    </div>
+
                 </div>
                 <div class="item">
                     <div class="wrap">
                         <div class="icon">
                             <img src="img/icons/first-aid-kit.svg">
                         </div>
-                        <div class="text"><span>Đúng chuyên khoa, chuyên gia</span></div>
+                        <div class="text"><span> Đúng chuyên khoa, đúng chuyên gia</span></div>
+                    </div>
+                    <div class="popup-desc">
+                        Thông qua danh sách chuyên khoa và các chuyên viên tư vấn, bệnh nhân hiểu rõ được các vấn đề sức khỏe của mình, chọn đúng chuyên khoa, chọn đúng chuyên gia giỏi "Chọn đúng thầy - Tìm đúng thuốc".
                     </div>
                 </div>
                 <div class="item">
@@ -167,18 +181,27 @@
                         </div>
                         <div class="text"><span>Lợi ích của người bệnh</span></div>
                     </div>
+                    <div class="popup-desc">
+                        Chọn chuyên gia giỏi, Chủ động thời gian khám, Không phải chờ đợi, tránh căng thẳng mệt mỏi, áp lực tâm lý và lãng phí thời gian. Chi phí không đổi. Không có sự khác biệt nào giữa những bệnh nhân hẹn khám trực tuyến và khám trực tiếp.
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item up">
                     <div class="icon">
                         <img src="img/icons/operator-avatar.svg">
                     </div>
                     <div class="text"><span>Hỗ trợ tận tình</span></div>
+                    <div class="popup-desc">
+                        Hẹn khám chuyên gia Hồng Phúc giúp bệnh nhân đặt lịch khám thuận tiện, mọi lúc, mọi nơi: giới thiệu các chuyên gia uy tín, thông tin minh bạch, rõ ràng, dịch vụ hẹn khám là hoàn toàn miễn phí, hỗ trợ trước, trong và sau khi đi khám.
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item up">
                     <div class="icon">
                         <img src="img/icons/customer-service.svg">
                     </div>
-                    <div class="text"><span>Chuyên gia hàng đầu</span></div>
+                    <div class="text"><span>Hẹn khám 24/7</span></div>
+                    <div class="popup-desc">
+                        Cổng thông tin Hẹn khám chuyên gia Hồng Phúc mở cửa 24/7 để tiếp nhận các thông tin hẹn khám của người bệnh, người có vấn đề sức khỏe không khẩn cấp, có kế hoạch khám chủ động, tránh việc xếp hàng và chờ đợi.
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,168 +215,321 @@
                     </h2>
                     <div class="description">Để đáp ứng nhu cầu chăm sóc sức khỏe chuyên sâu toàn diện của nhân dân chúng tôi không ngừng phục vụ quý khách một cách tốt nhất</div>
                     <div class="actions">
-                        <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span>Đặt lịch khám</a>
+                        <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span>Hẹn khám</a>
                     </div>
 
 
                 </div>
                 <div class="faculty-list">
-                    <div class="row-list">
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/tim-mach.png">
-                                </span>
-                                <span class="text">Tim mạch</span>
-                            </div>  
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="row-list">
+                                <h3 class="name-fa">Nội Khoa</h3>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tim-mach.png">
+                                        </span>
+                                        <span class="text">Tim mạch</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/ho-hap.png">
+                                        </span>
+                                        <span class="text">Hô hấp</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tieu-hoa.png">
+                                        </span>
+                                        <span class="text">Tiêu hóa</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/than-kinh.png">
+                                        </span>
+                                        <span class="text">Thần kinh – Tâm thần</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/than-tiet-nieu.png">
+                                        </span>
+                                        <span class="text">Thận tiết niệu</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/co-xuong-khop.png">
+                                        </span>
+                                        <span class="text">Cơ xương khớp</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/noi-tiet.png">
+                                        </span>
+                                        <span class="text">Nội tiết – Đái tháo đường</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/intestines.png">
+                                        </span>
+                                        <span class="text">Nội tổng quát</span>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="row-list">
+                                <h3 class="name-fa">Nội Khoa</h3>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tim-mach.png">
+                                        </span>
+                                        <span class="text">Tim mạch</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/ho-hap.png">
+                                        </span>
+                                        <span class="text">Lồng ngực</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tieu-hoa.png">
+                                        </span>
+                                        <span class="text">Tiêu hóa</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/than-tiet-nieu.png">
+                                        </span>
+                                        <span class="text">Thận tiết niệu</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/than-kinh.png">
+                                        </span>
+                                        <span class="text">Thần kinh – Tâm thần</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/co-xuong-khop.png">
+                                        </span>
+                                        <span class="text">Cơ xương khớp</span>
+                                    </div>  
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/gan-mat.png">
-                                </span>
-                                <span class="text">Gan mật</span>
-                            </div>  
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="row-list">
+                                <h3 class="name-fa">Sản Khoa – Nam khoa</h3>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/san-phu-khoa.png">
+                                        </span>
+                                        <span class="text">Bệnh lý phụ khoa</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/woman-pregnant.png">
+                                        </span>
+                                        <span class="text">Chăm sóc phụ nữ có thai</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/fertilization.png">
+                                        </span>
+                                        <span class="text">Vô sinh</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/penis.png">
+                                        </span>
+                                        <span class="text">Nam khoa</span>
+                                    </div>  
+                                </div>
+                                
+                            </div>
+                            <div class="row-list">
+                                <h3 class="name-fa">Nhi khoa</h3>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tim-mach.png">
+                                        </span>
+                                        <span class="text">Tim mạch</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/ho-hap.png">
+                                        </span>
+                                        <span class="text">Hô hấp</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tieu-hoa.png">
+                                        </span>
+                                        <span class="text">Tiêu hóa</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tai-mui-hong.png">
+                                        </span>
+                                        <span class="text">Tai-Mũi-Họng</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/cereals.png">
+                                        </span>
+                                        <span class="text">Dinh dưỡng</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/infrared.png">
+                                        </span>
+                                        <span class="text">Vật lý trị liệu</span>
+                                    </div>  
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/noi-tiet.png">
-                                </span>
-                                <span class="text">Nội tiết - Rối loạn chuyển hóa</span>
-                            </div>  
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="row-list">
+                                <h3 class="name-fa">Y học cổ truyền</h3>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tieu-hoa.png">
+                                        </span>
+                                        <span class="text">Các bệnh tiêu hoá</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/penis.png">
+                                        </span>
+                                        <span class="text">Các bệnh vô sinh – Nam khoa</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/co-xuong-khop.png">
+                                        </span>
+                                        <span class="text"> Các bệnh cơ xương khớp</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/eyeball.png">
+                                        </span>
+                                        <span class="text">Các bệnh mãn tính</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/medicines.png">
+                                        </span>
+                                        <span class="text">Bệnh suy nhược cơ thể, mất ngủ</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/colon.png">
+                                        </span>
+                                        <span class="text">Các bệnh rối loạn chuyển hoá</span>
+                                    </div>  
+                                </div>
+                                
+                            </div>
+                            <div class="row-list">
+                                <h3 class="name-fa">Các chuyên khoa khác</h3>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/mat.png">
+                                        </span>
+                                        <span class="text">Mắt</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/tai-mui-hong.png">
+                                        </span>
+                                        <span class="text">Tai-Mũi-Họng</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/rang-ham-mat.png">
+                                        </span>
+                                        <span class="text">Răng-Hàm-Mặt</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/da-lieu.png">
+                                        </span>
+                                        <span class="text">Da liễu</span>
+                                    </div>  
+                                </div>
+                                <div class="item">
+                                    <div class="w">
+                                        <span class="icon">
+                                            <img src="img/icons/ung-thu.png">
+                                        </span>
+                                        <span class="text">Ung thư</span>
+                                    </div>  
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row-list">
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/co-xuong-khop.png">
-                                </span>
-                                <span class="text">Cơ xương khớp</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/than-kinh.png">
-                                </span>
-                                <span class="text">Thần kinh</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/san-phu-khoa.png">
-                                </span>
-                                <span class="text">Sản phụ khoa</span>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="row-list">
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/mat.png">
-                                </span>
-                                <span class="text">Mắt</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/nhi-khoa.png">
-                                </span>
-                                <span class="text">Nhi khoa</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/ung-thu.png">
-                                </span>
-                                <span class="text">Ung thư</span>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="row-list">
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/ho-hap.png">
-                                </span>
-                                <span class="text">Hô hấp</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/rang-ham-mat.png">
-                                </span>
-                                <span class="text">Răng-Hàm-Mặt</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/trung-tam-set-nghiem.png">
-                                </span>
-                                <span class="text">Trung tâm xét nghiệm</span>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="row-list">
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/tieu-hoa.png">
-                                </span>
-                                <span class="text">Tiêu hóa</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/tai-mui-hong.png">
-                                </span>
-                                <span class="text">Tai-Mũi-Họng</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/tham-do-chuc-nang.png">
-                                </span>
-                                <span class="text">Trung tâm Thăm dò chức năng</span>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="row-list">
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/than-tiet-nieu.png">
-                                </span>
-                                <span class="text">Thận tiết niệu</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/da-lieu.png">
-                                </span>
-                                <span class="text">Da liễu</span>
-                            </div>  
-                        </div>
-                        <div class="item">
-                            <div class="w">
-                                <span class="icon">
-                                    <img src="img/icons/san-phu-khoa.png">
-                                </span>
-                                <span class="text">Sản phụ khoa</span>
-                            </div>  
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -454,10 +630,75 @@
                 <div class="slider-nav nav-prev"></div>
                 <div class="slider-nav nav-next"></div>
             </div>
-
+            <div class="quote">
+                Chọn đúng thầy – Tìm đúng thuốc
+            </div>
         </div>
     </section>
-    <section class="section -news">
+    <section class="section -services">
+        <div class="container">
+            <div class="head-main">
+                <h2 class="title-main">  Gói dịch vụ</h2>
+                <div class="description">Dịch vụ đa dạng phục vụ khách hàng</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-item">
+                        <div class="image" style="background-image: url(img/services/xet-nghiem.jpg)"></div>
+                        <h3 class="service-title">  Xét nghiệm – CĐHA</h3>
+                        <ul class="list">
+                            <li>Xét nghiệm cơ bản</li>
+                            <li>Xét nghiệm chuyên sâu</li>
+                            <li>Chẩn đoán hình ảnh</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-item">
+                        <div class="image" style="background-image: url(img/services/kham-tong-quat.jpg)"></div>
+                        <h3 class="service-title">  Gói khám tổng quát</h3>
+                        <ul class="list">
+                            <li>Khám chung</li>
+                            <li>Khám tiểu đường</li>
+                            <li>Khám tim mạch</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-item">
+                        <div class="image" style="background-image: url(img/services/tham-my.jpg)"></div>
+                        <h3 class="service-title">  Thẩm mỹ</h3>
+                        <ul class="list">
+                            <li>Mặt: mắt, mũi, cầm</li>
+                            <li>Ngực</li>
+                            <li>Bụng</li>
+                            <li>Thẩm mỹ khác</li>
+                            <li>Xử lý sẹo, xăm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section -keymess"  style="background-image: url(img/bg-3.png);">
+        <div class="container">
+            <div class="slider-keymess">
+                <div class="item">
+                    <h3 class="title">Tất cả các chuyên khoa</h3>
+                    <p class="desc">   Chúng tôi có 200 chuyên gia thuộc 21 chuyên khoa, bạn có thể tìm được tất cả các chuyên khoa bạn cần</p>
+                </div>
+                <div class="item">
+                    <h3 class="title">Chuyên gia độc lập</h3>
+                    <p class="desc"> Với tất cả tâm huyết và kinh nghiệm cá nhân, các chuyên gia khám cho bạn với cái tâm của người thầy thuốc</p>
+                </div>
+                <div class="item">
+                    <h3 class="title">Hiệu quả - Chính xác</h3>
+                    <p class="desc">Bác sĩ của chúng tôi là những người giỏi, trong lĩnh vực chuyên khoa sâu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section -news -homepage">
         <div class="container">
             <div class="head-main">
                 <h2 class="title-main">Tin tức</h2>
@@ -465,95 +706,108 @@
             </div>
             <div class="box-news">
                 <div class="row">
-                    <div class="col-sm-7 col-xs-12 col-md-7">
+                    <div class="col-sm-4 col-xs-12 col-md-4">
                         <div class="post-main">
                             <div class="post-image">
                                 <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/tin-tuc-moi.jpg);"></a>
                             </div>
                             <div class="post-detail">
                                 <div class="post-cat">
-                                    <a href="#">Sức khoẻ & cuộc sống</a>
+                                    <a href="#"> Y học và cuộc sống</a>
+                                </div>
+                                <h3 class="post-title"><a href="#">Bí quyết chế biến cá hấp không tanh và thơm ngon</a></h3>
+                            </div>
+                        </div>
+                        <div class="posts">
+                            <div class="item">
+                                <h4 class="post-title">
+                                    <a href="#">10 lợi ích tuyệt diệu của mướp đắng</a>
+                                </h4>
+                            </div>
+                            <div class="item">
+                                <h4 class="post-title">
+                                    <a href="#">Tính ưu việt của biện pháp cấy que tránh thai dưới da</a>
+                                </h4>
+                            </div>
+                            <div class="item">
+                                <h4 class="post-title">
+                                    <a href="#">Những sai lầm trong chăm sóc trẻ ngày lạnh</a>
+                                </h4>
+                            </div>
+                            <div class="item">
+                                <h4 class="post-title">
+                                    <a href="#">Dấu hiệu nhận biết rối loạn nội tiết tố nữ</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 col-md-4">
+                        <div class="post-main">
+                            <div class="post-image">
+                                <a href="#" style="background-image: url(http://img.medlatec.vn//News/tmp/818685b2efda84df1a942b7bf4fd5e5f_3952771148151062016.jpg);"></a>
+                            </div>
+                            <div class="post-detail">
+                                <div class="post-cat">
+                                    <a href="#"> Tin tức Hồng Phúc</a>
                                 </div>
                                 <h3 class="post-title"><a href="#">Gia tăng đột biến bệnh nhân sơ sinh mắc viêm phổi do nhiễm virus</a></h3>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-xs-12 col-md-5">
                         <div class="posts">
                             <div class="item">
-                                <div class="post-image">
-                                    <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/tin-tuc-moi.jpg);"></a>
-                                </div>
                                 <h4 class="post-title">
-                                    <a href="#">Căn dặn bệnh nhân trước khi đi khám</a>
+                                    <a href="#">Giúp trẻ không béo phì mà lại phát triển thể chất</a>
                                 </h4>
-                                <div class="post-info">
-                                    <span class="post-date">
-                                        <span class="icon -ap icon-calendar22"></span>
-                                        08.09.2017
-                                    </span>
-                                    <span class="post-cat">Sức khoẻ & Cuộc sống</span>
-                                </div>
                             </div>
                             <div class="item">
-                                <div class="post-image">
-                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/kien-thuc-y-hoc.jpg);"></a>
-                                </div>
                                 <h4 class="post-title">
-                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                    <a href="#">Chớ nên ăn những thực phẩm này trước khi tập thể dục</a>
                                 </h4>
-                                <div class="post-info">
-                                    <span class="post-date">
-                                        <span class="icon -ap icon-calendar22"></span>
-                                        08.09.2017
-                                    </span>
-                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
-                                </div>
                             </div>
                             <div class="item">
-                                <div class="post-image">
-                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/kien-thuc-y-hoc.jpg);"></a>
-                                </div>
                                 <h4 class="post-title">
-                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                    <a href="#">Bà bầu nên ăn gì trong 3 tháng đầu?</a>
                                 </h4>
-                                <div class="post-info">
-                                    <span class="post-date">
-                                        <span class="icon -ap icon-calendar22"></span>
-                                        08.09.2017
-                                    </span>
-                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
-                                </div>
                             </div>
                             <div class="item">
-                                <div class="post-image">
-                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/tin-tuc-moi.jpg);"></a>
-                                </div>
                                 <h4 class="post-title">
-                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                    <a href="#">Những điều cần biết khi mang thai tháng đầu tiên</a>
                                 </h4>
-                                <div class="post-info">
-                                    <span class="post-date">
-                                        <span class="icon -ap icon-calendar22"></span>
-                                        08.09.2017
-                                    </span>
-                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 col-md-4">
+                        <div class="post-main">
+                            <div class="post-image">
+                                <a href="#" style="background-image: url(http://img.medlatec.vn//News/tmp/noisoidadayquaduongmui-medlatec1418442892016.jpg);"></a>
+                            </div>
+                            <div class="post-detail">
+                                <div class="post-cat">
+                                    <a href="#">Clip giới thiệu</a>
                                 </div>
+                                <h3 class="post-title"><a href="#">Bà bầu nên ăn gì trong 3 tháng đầu?</a></h3>
+                            </div>
+                        </div>
+                        <div class="posts">
+                            <div class="item">
+                                <h4 class="post-title">
+                                    <a href="#">Bí quyết để giảm cân cho trẻ ở mọi độ tuổi</a>
+                                </h4>
                             </div>
                             <div class="item">
-                                <div class="post-image">
-                                <a href="#" style="background-image: url(http://henkhamchuyengia.net.vn/images/kien-thuc-y-hoc.jpg);"></a>
-                                </div>
                                 <h4 class="post-title">
-                                    <a href="#">Giới thiệu về Cổng thông tin Hẹn khám chuyên gia Hồng Phúc</a>
+                                    <a href="#">Giảm cân nhanh hơn vào mùa đông</a>
                                 </h4>
-                                <div class="post-info">
-                                    <span class="post-date">
-                                        <span class="icon -ap icon-calendar22"></span>
-                                        08.09.2017
-                                    </span>
-                                    <span class="post-cat"><a href="#">Sức khoẻ & Cuộc sống</a></span>
-                                </div>
+                            </div>
+                            <div class="item">
+                                <h4 class="post-title">
+                                    <a href="#">Mách dân văn phòng bí quyết giảm mỡ bụng</a>
+                                </h4>
+                            </div>
+                            <div class="item">
+                                <h4 class="post-title">
+                                    <a href="#">3 bước giúp các mẹ lấy lại vóc dáng sau sinh</a>
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -565,7 +819,7 @@
         <div class="container">
             <div class="head-main">
                 <h2 class="title-main">Danh sách phòng khám </h2>
-                <p class="description">Hơn 10+ Phòng khám trong hệ thống của chúng tôi</p>
+                <p class="description">Hơn 100+ Phòng khám trong hệ thống của chúng tôi</p>
             </div>
             <div class="list-customers">
                 <div class="item">
@@ -610,10 +864,23 @@
                 </div>
             </div>
             <div class="actions">
-                <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span>Đặt lịch khám</a>
+                <a href="#" class="btn -schedule"><span class="icon -ap icon-calendar22"></span>Hẹn khám</a>
             </div>
         </div>
     </section>
+    <section class="section -subcribe">
+        <div class="container">
+            <div class="box-subcribe">
+                <div class="title">Đăng ký ngay để nhận thông tin khuyến mãi từ chúng tôi</div>
+                <div class="input">
+                    <input type="text" class="form-control" placeholder="Nhập Email">
+                    <button class="btn btn-subcribe">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -627,36 +894,41 @@
                             <p>Địa chỉ: Số 12, ngõ C khu TT công an Tỉnh, tổ 7, Mộ Lao, Hà Đông, Hà Nội.</p>
                             <p>Hotline: 046.687.1279 | henkhamchuyengia.net@gmail.com.</p>
                         </div>
+                        <div class="social">
+                            <a href="#" class="btn"><span class="fa fa-facebook"></span></a>
+                            <a href="#" class="btn"><span class="fa fa-google"></span></a>
+                            <a href="#" class="btn"><span class="fa fa-youtube"></span></a>
+                            <a href="#" class="btn"><span class="fa fa-twitter"></span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 box-links">
-                    <h4 class="title">Liên kết</h4>
+                    <h4 class="title">Về Hồng Phúc</h4>
                     <div class="links">
-                        <a class="url">Trang chủ        </a>
-                        <a class="url">Giới thiệu      </a>
-                        <a class="url">Tính năng        </a>
-                        <a class="url">Bảng giá        </a>
-                        <a class="url">Blog          </a>
-                        <a class="url">Trợ giúp</a>
+                        <a class="url">  Về chúng tôi        </a>
+                        <a class="url">Sứ mệnh, tầm nhìn, giá trị cốt lõi </a>
+                        <a class="url"> Đội ngũ </a>
+                        <a class="url">Điểm nhấn </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 box-links">
-                    <h4 class="title">Chính sách</h4>
+                    <h4 class="title"> Qui chế Hồng Phúc</h4>
                     <div class="links">
-                        <a class="url">Chính sách       </a>
-                        <a class="url">Bảo mật     </a>
-                        <a class="url">Câu hỏi thường gặp  </a>
-                        <a class="url">Hợp tác</a>
-                        <a class="url">Hỗ trợ</a>
+                        <a class="url">Giới thiệu  </a>
+                        <a class="url">Qui chế hoạt động </a>
+                        <a class="url">Chính sách bảo vệ thông tin  </a>
+                        <a class="url">Qui trình hẹn khám</a>
+                        <a class="url">Giải quyết tranh chấp</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 box-links">
-                    <h4 class="title">Liên kết</h4>
-                    <div class="social">
-                        <a href="#" class="btn"><span class="fa fa-facebook"></span></a>
-                        <a href="#" class="btn"><span class="fa fa-google"></span></a>
-                        <a href="#" class="btn"><span class="fa fa-youtube"></span></a>
-                        <a href="#" class="btn"><span class="fa fa-twitter"></span></a>
+                    <h4 class="title">  Hợp tác Hồng Phúc</h4>
+                    <div class="links">
+                        <a class="url">Tuyển dụng </a>
+                        <a class="url">Các bước hẹn khám</a>
+                        <a class="url">Trở thành thành viên </a>
+                        <a class="url">Trở thành Cộng tác viên</a>
+                        <a class="url">Trở thành chuyên gia</a>
                     </div>
                 </div>
             </div>
@@ -673,6 +945,36 @@
     
     <script type="text/javascript" src="vendor/slick/js/slick.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        $( ".box-whychoose .item" ).hover(
+
+            function() {
+                var yPos=$(this).position().top;
+                if($(this).hasClass("up")){
+                    yPos=yPos-77;    
+
+                }else{
+                    yPos=yPos+77;                        
+                }
+                
+                $(this).find("> .popup-desc").css({"top":yPos+"px"});
+                $( this ).addClass( "hover" );
+                $( this ).parent().addClass( "hover" );
+            }, function() {
+                $( this ).removeClass( "hover" );
+                $( this ).parent().removeClass( "hover" );
+            }
+        );
+        $('.slider-keymess').slick({
+          dots: true,
+          arrows:false,
+          infinite: true,
+          speed: 300,
+          autoplay:true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
+    </script>
 </body>
 
 </html>
