@@ -1,11 +1,13 @@
 .title-main{
 	.bold;
 	.upper;
-	.f20;
+	.f24;
 	color: @main;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	font-family: UTMAvo;
 	.center;
+    .inline;
+    .fullw;
 	line-height: 1.4;
 	.relative;
 	span{
@@ -14,14 +16,15 @@
 }
 .head-main{
 	.center;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	.title-main{
 		margin-bottom: 10px;
 		
 
 	}
 	.description{
-		.f16;
+		.f18;
+        color:#444;
 		
 
 
@@ -33,29 +36,11 @@
 }
 .section.-whychoose{
 	background: #f6f8f9;
-	margin-top: 30px;
-	padding: 100px 60px;
 	.xo;
-	.bg{
-		.absolute;
-		top: 0px;
-		width:50%;
-		left: 0px;
-		bottom: 0px;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-
-	}
 	.box-whychoose{
-		max-width: 768px;
-		background: #fff;
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 		.relative;
 		z-index: 10;
-		padding:30px;
 		border-radius: 0px;
-		float: right;
         .list{
             .relative;
             &:after{
@@ -64,19 +49,8 @@
                 clear: both;
             }
         }
-		&:before{
-			.absolute;
-			content:"";
-			transform:skewX(-20deg);
-			background: #fff;
-			top: 0px;
-			bottom: 0px;
-			width: 400px;
-			left: -50px;
-			box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
-		}
 		.item{
-			width: 33.333%;
+			width: 20%;
 			.left;
 			padding: 10px;
             .pointer;
@@ -186,61 +160,39 @@
     
 }
 .box-faculty{
-	.faculty-canvas{
-		.fullw;
-		display: table;
-
-	}
-	.faculty-sidebar{
-		width: 350px;
-		.cell;
-		.vcenter;
-		background: @main;
-		.center;
-		padding: 20px;
-		color: #fff;
-
-		border-right: 5px solid darken(@main,5);
-		.title-main{
-			color: #fff;
-
-		}
-		.description{
-			.f14;
-		}
-		.actions{
-			.btn.-schedule{
-				.rgba(#000,0.2);
-				border: none;
-				&:hover{
-					.rgba(#000,0.3);
-
-				}
-			}
-		}
-	}
     .name-fa{
-        .f16;
+        .f20;
+        .block;
+        .center;
         color: @second;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         .upper;
+
     }
 	.faculty-list{
-		.cell;
-		.vcenter;
-		padding: 20px;
+        margin-top: 20px;
+        clear: both;
+        padding: 0px 15px;
 		.row-list{
 			.xo;
-			border-bottom: 1px solid @borc;
 			margin-bottom: 20px;
-			padding-bottom: 20px;
-
 		}
 		.item{
-
+            width: 25%;
+            .left;
+            &:nth-child(4n+5){
+                clear: both;
+            }
             .w{
                 padding: 5px;
-                display: table;    
+                display: table; 
+                color: #333;   
+                .fullw;
+                &:hover{
+                    background: #f6f8f9;
+                    color: @main;
+                    text-decoration: none;
+                }
             }
             
             &:last-child{
@@ -253,6 +205,7 @@
             width: 30px;
             .center;
 			.vcenter;
+            height: 30px;
             img{
                 max-width: 100%;
             }
@@ -263,11 +216,81 @@
 			.vcenter;
 		}
 	}
+    .row-list{
+        padding: 15px;
+        .corner(5px);
+        display: none;
+        border: 1px solid @borc;
+        &.active{
+            display: block;
+        }
+    }
+    .box-medicine{
+        display: table;
+        width: 100%;
+        
+        .medicine-item{
+            .cell;
+            padding: 15px;
+            width: 16.6666%;
+            
+        }
+        .w{
+            background: #0066b3;
+            .center;
+            .pointer;
+            .icon{
+                padding: 10px;
+
+                img{
+                    max-width: 100%;
+                    height: 60px;
+                }
+            }
+            .title{
+                color: #fff;
+                padding: 10px;
+                .thick;
+                height: 60px;
+            }
+            &:hover{
+                background: darken(#0066b3,-10);  
+            }
+            &.active{
+                background: @second;
+            }
+
+        }
+        .down{
+            .rgba(#fff,0.1);
+            color: #fff;
+            .center;
+            .f20;
+        }
+        .medicine-item{
+            
+        }
+
+    }
 }
 
 .section.-expert{
-	background: @main;
-
+	background: #12202b;
+    .bg{
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-size: cover;
+        background-position: center;
+        z-index: 10;
+        .absolute;
+        opacity: 0.15;
+    }
+    .container{
+        z-index: 11;
+        .relative;
+    }
 	.head-main{
 		.center;
 		.title-main{
@@ -354,37 +377,7 @@
 			}
 		}
 	}
-	.slider-nav{
-		font-family: "ap";
-		.absolute;
-		width: 36px;
-		height: 36px;
-		.center;
-		line-height: 36px;
-		bottom: 0px;
-		top: 0px;
-		margin: auto;
-		font-size: 26px;
-		color: #fff;
-		opacity: 0.6;
-		.pointer;
-		&:hover{
-			opacity: 1;
-		}
-		&.nav-prev{
-			left: -10px;
-			&:before{
-				content: "\e6b9";
-			}
-		}
-		&.nav-next{
-			right: -10px;
-			&:before{
-				content: "\e6ba";
-			}
-		}
-
-	}
+	
 	&.-detail{
 		background: none;
 		.panel{
@@ -407,6 +400,73 @@
             .relative;
         }
     }
+}
+.slider-nav{
+    font-family: "ap";
+    .absolute;
+    width: 36px;
+    height: 36px;
+    .center;
+    line-height: 36px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    font-size: 26px;
+    color: #fff;
+    opacity: 0.6;
+    .pointer;
+    &:hover{
+        opacity: 1;
+    }
+    &.nav-prev{
+        left: -10px;
+        &:before{
+            content: "\e6b9";
+        }
+    }
+    &.nav-next{
+        right: -10px;
+        &:before{
+            content: "\e6ba";
+        }
+    }
+
+}
+.block-plan{
+    .item{
+        padding: 0px 15px;
+        text-align: center;
+        .f18;
+        &:hover{
+            img{
+                transition:all 0.3s ease;
+                transform:scale(1.1);
+            }
+        }
+    }
+    .image{
+        display: block;
+        margin-bottom: 10px;
+        .xo;
+        img{
+            max-width: 100%;
+            transition:all 0.3s ease;
+        }
+
+    }
+    .title{
+        >a{
+            color: @text;
+            &:hover{
+                text-decoration: none;
+                color: @main;
+            }
+        }
+    }
+    .slider-nav{
+        color: #333;
+    }
+
 }
 .section.-services{
     background: #f6f8f9;
@@ -572,6 +632,7 @@
 	}
 }
 .section.-news{
+    background: #f6f8f9;
 	.post-main{
 		.relative;
 		margin-bottom: 30px;
@@ -588,7 +649,6 @@
 			bottom: 0px;
 			right: 20%;
 			left: 0px;
-			.rgba(#fff,0.8);
 		}
 		.post-cat{
 			
@@ -737,7 +797,6 @@
 }
 
 .section.-customers{
-	border-top: 1px solid @borc;
 	.list-customers{
 		.center;
 		img{

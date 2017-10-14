@@ -1,4 +1,4 @@
-$('.slider-expert').slick({
+$('.slider-expert,.slider-plan').slick({
   dots: false,
   arrows:false,
   infinite: true,
@@ -59,12 +59,19 @@ $('.list-customers').slick({
     // instead of a settings object
   ]
 });
-$('.nav-slider .nav-prev').click(function(){
+$('.nav-slider.exp .nav-prev').click(function(){
   $('.slider-expert').slick('slickPrev');
 });
 
-$('.nav-slider .nav-next').click(function(){
+$('.nav-slider.exp .nav-next').click(function(){
   $('.slider-expert').slick('slickNext');
+});
+$('.nav-slider.pl .nav-prev').click(function(){
+  $('.slider-plan').slick('slickPrev');
+});
+
+$('.nav-slider.pl .nav-next').click(function(){
+  $('.slider-plan').slick('slickNext');
 });
 var LP=new function __LP(){
     this.init=function(){
