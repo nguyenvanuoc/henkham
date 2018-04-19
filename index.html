@@ -44,13 +44,13 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand"><img src="img/logo.svg" alt=""></a>
-                <div class="nav-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" >
+                <div class="nav-toggle" >
                     <span class="bar first"></span>
                     <span class="bar mid"></span>
                     <span class="bar last"></span>
                 </div>
             </div>
-            <nav class="collapse navbar-collapse navbar-right" id="navbar">
+            <nav class="navbar-collapse navbar-right" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="menu-item active">
                         <a href="#">Trang chủ</a>
@@ -1098,6 +1098,9 @@
                 $(id).addClass("active");
                 $(this).addClass("active");
             }
+        });
+        $(".nav-toggle").click(function(){
+            $("#navbar").toggleClass("show");
         });
     </script>
 </body>
